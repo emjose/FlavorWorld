@@ -4,6 +4,7 @@ class CreateDishes < ActiveRecord::Migration[6.0]
       t.string :origin
       t.string :name
       t.string :description
+      t.integer :likes
       t.string :image_url
 
       t.timestamps

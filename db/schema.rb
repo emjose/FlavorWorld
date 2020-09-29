@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_25_133342) do
+ActiveRecord::Schema.define(version: 2020_09_29_075553) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "comments", force: :cascade do |t|
-    t.string "content"
+    t.text "content"
     t.bigint "user_id", null: false
     t.bigint "dish_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -29,18 +29,19 @@ ActiveRecord::Schema.define(version: 2020_09_25_133342) do
     t.string "origin"
     t.string "name"
     t.string "description"
+    t.integer "likes"
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "likes", force: :cascade do |t|
+  create_table "saved_dishes", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "dish_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["dish_id"], name: "index_likes_on_dish_id"
-    t.index ["user_id"], name: "index_likes_on_user_id"
+    t.index ["dish_id"], name: "index_saved_dishes_on_dish_id"
+    t.index ["user_id"], name: "index_saved_dishes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -51,6 +52,6 @@ ActiveRecord::Schema.define(version: 2020_09_25_133342) do
 
   add_foreign_key "comments", "dishes"
   add_foreign_key "comments", "users"
-  add_foreign_key "likes", "dishes"
-  add_foreign_key "likes", "users"
+  add_foreign_key "saved_dishes", "dishes"
+  add_foreign_key "saved_dishes", "users"
 end

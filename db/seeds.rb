@@ -8,7 +8,6 @@
 
 Dish.destroy_all
 User.destroy_all
-Like.destroy_all
 Comment.destroy_all
 
 # Dish.reset_pk_sequence
@@ -153,7 +152,6 @@ desc46 = "Literally translated into 'fire meat,' Bulgogi is made up of thin, mar
 desc47 = "The exotic cousin of lasagna, Moussaka is a baked casserole consisting of ground lamb meat and layers of sliced eggplant, covered with a thick layer of bechamel sauce that gets golden and crusty as it bakes."
 
 desc48 = "The pizza we all know today, with tomato sauce, cheese, and toppings, originated in Naples, Italy, and was first recorded in 1544. Pizza had humble origins as a nourishing food that was first enjoyed by peasants in the countryside."
-
 
 # image_url variables
 image_url01 = " https://res.cloudinary.com/dn1e07eul/image/upload/v1601225442/FlavorWorld/dish01_sushi_nd2hed.jpg"
