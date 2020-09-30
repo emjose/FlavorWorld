@@ -2,5 +2,7 @@ class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :dish
 
-  validates :content, presence: true, length: { in: 6..30 }
+  validates :content, presence: true
 end
+
+  # validates :content, presence: true, length: { in: 6..30 }
