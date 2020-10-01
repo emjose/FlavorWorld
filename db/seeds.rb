@@ -63,7 +63,7 @@ desc02 = "Flavor-packed Ethiopian stew with tender cooked chicken in a fiery Ber
 
 desc03 = "Far older than Instagram, the combination of bread and avocado was birthed in Mexico. The avocado on toast can be accompanied by olive oil, hummus, feta, tomato, and many other toppings."
 
-desc04 = "Golden, crispy, and seasoned pork belly deep-fried in a pan or work, and chopped into pieces. It is usually accompanied with dipping sauce and serve with white rice."
+desc04 = "Golden, crispy, and seasoned pork belly deep-fried in a pan or work, and chopped into pieces. It is usually accompanied with dipping sauce and served with white rice."
 
 desc05 = "Grilled or slow-cooked chicken dry rubbed or wet marinated with a hot spice mixture called Jamaican jerk spice. The smoke from slow cooking over a fire is key to the flavor of the dish."
 
